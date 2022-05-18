@@ -48,9 +48,7 @@ class MovieManagerTest {
         manager.setMoviesList(movieListTest);
 
         String[] expected = new String[]{"Film 5", "Film 4", "Film 3", "Film 2", "Film 1"};
-
-        manager.outputLastMovies();
-        String[] actual = manager.getMoviesList();
+        String[] actual = manager.outputLastMovies();
 
         assertArrayEquals(expected, actual);
     }
